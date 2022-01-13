@@ -34,3 +34,7 @@
 === User Stories
 
 link:https://miro.com/app/board/uXjVOY8hA_k=/?invite_link_id=177006962450[Mind Map^]
+
+=== UML class diagram
+
+link:./interview-helper.drawio[UML Class Diagram with draw.io]
