@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  postgres:
+    container_name: interview-helper-postgres-container
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: ${POSTGRES_DATABASE:-interview_helper}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-12345678}
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - '5432:5432'
+    volumes:
+      - './.db/postgresql/data:/var/lib/postgresql/data'
+    networks:
+      - inner
+
+networks:
+  inner:
+    name: interview-helper-network
+    driver: bridge

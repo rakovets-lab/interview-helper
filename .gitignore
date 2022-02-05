@@ -4,3 +4,6 @@
 
 # Apache Maven
 target/
+
+# Local env
+/.db
