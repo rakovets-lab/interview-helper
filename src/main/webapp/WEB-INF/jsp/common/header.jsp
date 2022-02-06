@@ -19,6 +19,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="collapse navbar-collapse navbar-light justify-content-end" id="right-menu">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><c:out value="${sessionScope.user.firstName} ${sessionScope.user.lastName}"/></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<c:url value="/api/logout"/>"
+                           class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Logout</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
