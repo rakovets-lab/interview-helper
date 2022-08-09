@@ -1,0 +1,77 @@
+= Site-Content-Hijacker
+
+Console application for collecting site content with interview questions and generating Asciidoc documentation based on them.
+
+There are two possible ways to use this application:
+
+== Running modes
+
+=== Automated
+
+To start the application in automatic mode make the following steps:
+
+==== Fill in the `configuration.json` file following the next by.rakovets.interview.content_parser.model :
+
+[source,json]
+----
+{
+"pathForSaving": "",
+"pathForAssets": "",
+"resources" : [
+  { "uri" : "",
+    "fileName" : "",
+    "xPath" : ""
+  },
+  { "uri" : "",
+    "fileName" : "",
+    "xPath" : ""
+  }
+]
+}
+----
+
+Where:
+
+*  `pathForSaving` - the pass where you want to save generated `.adoc` file
+*  `pathForAssets` - the pass where you want to save generated image file
+*  `resources` - list of pages you want to hijack, it should contain minimum 1 page;
+
+Each page should contain the following parameters:
+
+* `uri` - uri for a certain page needed to be hijacked
+* `fileName` - a fileName for a file that will be generated after hijacking
+* `xPath` - xPath for a parser to find the first node to start parsing process with
+
+
+==== Open terminal and run site-conte-hijacker.jar file following the next pattern:
+
+[source, shell script]
+----
+java -jar "globalPass\site-conte-hijacker.jar" "globalPass\configuration.json"
+----
+
+Where `globalPass` - global pass to the mentioned files on your PC.
+
+=== Manual
+
+In case when:
+
+* configuration.json file doesn't exist
+* path for a configuration.json file is incorrect
+* data in configuration.json file is incorrect
+
+The application will run in manual mode where you will be suggested to input in console :
+
+* `uri` - uri for a certain page needed to be hijacked
+* `fileName` - a fileName for a file that will be generated after hijacking
+* `xPath` - xPath for a parser to find the first node to start parsing process with
+* `y` or `n` - in case of successful hijacking you need to input `y` - to continue hijacking and `n` to shut down site-content-hijacker.
+
+== Runtime messages
+
+* "File "fileName" was successfully saved" - means that file with the "fileName" was successfully hijacked and saved.
+* "Check configuration file" - problem caused by configuration file.
+* "Internal problem" - problem caused by the entity wich is not controlled by site-content-hijacker .
+* "Wrong URI" - problem caused by using incorrect URI.
+* "Problem with Internet Connection" - problem caused by the weak internet connection.
+

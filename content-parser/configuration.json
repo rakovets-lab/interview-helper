@@ -1,0 +1,40 @@
+  {
+    "pathForSaving" : "./output-files/questions",
+    "pathForAssets" : "./assets/image",
+    "resources" : [
+      { "uri" : "https://javastudy.ru/interview/collections/",
+        "fileName" : "collections.adoc",
+        "xPath" : ".//h4"
+      },
+      {
+        "uri" : "https://javastudy.ru/interview/exceptions/",
+        "fileName" : "exceptions.csv",
+        "xPath" : ".//h4"
+      },
+      {
+        "uri" : "https://javastudy.ru/interview/java-oop/",
+        "fileName" : "oop.adoc",
+        "xPath" : ".//h4"
+      },
+      {
+        "uri" : "https://javastudy.ru/interview/concurrent/",
+        "fileName" : "concurrency.adoc",
+        "xPath" : ".//h4"
+      },
+      {
+        "uri" : "https://javastudy.ru/interview/jee-jsp-questions-answers/",
+        "fileName" : "jsp.csv",
+        "xPath" : ".//h4"
+      },
+      {
+        "uri" : "https://jsehelper.blogspot.com/2016/04/bootstrap-twitter-bootstrap-2.html",
+        "fileName" : "bootstrap.adoc",
+        "xPath" : ".//div[@style=\"text-align: left;\"]"
+      },
+      {
+        "uri" : "https://jsehelper.blogspot.com/2016/01/java-core-1.html",
+        "fileName" : "java-core.csv",
+        "xPath" : ".//div[@style=\"text-align: left;\"]/div[@style=\"text-align: left;\"]"
+      }
+    ]
+  }
