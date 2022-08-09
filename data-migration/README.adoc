@@ -1,0 +1,16 @@
+= interview-data-migration
+
+Contains data migration application and interview data in different formats (CSV, AsciiDoc, etc.)
+
+== Getting start
+
+The project uses a database *PostgreSQL*.
+To run a *PostgreSQL* database using *Docker Compose*, open a terminal in the directory:
+
+To work with *Docker Compose*, use the following commands:
+
+* `docker-compose up` - deploys web application services and creates new containers from a docker image;
+* `docker-compose up -d` - deploys web application services and creates new containers from a docker image in the background, while maintaining the ability to control the terminal;
+* `docker-compose stop` - stops all services associated with a limited Docker Compose configuration;
+* `docker-compose start` - starts any stopped services according to the stopped configuration settings specified in the same Docker Compose file;
+* `docker-compose down` - stops and removes all services and all containers associated with a particular Docker Compose configuration.
