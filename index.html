@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>RL - Interview Helper</title>
+<title>Interview Helper</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,25 +438,137 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>RL - Interview Helper</h1>
+<h1>Interview Helper</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_business_analysis">1. Business Analysis</a></li>
-<li><a href="#_architecture">2. Architecture</a></li>
-<li><a href="#_domain_models">3. Domain models</a></li>
+<li><a href="#_description">1. Description</a>
+<ul class="sectlevel2">
+<li><a href="#_какую_проблему_данный_проект_решает_или_что_нового_приносит_для_пользователей">1.1. Какую проблему данный проект решает или что нового приносит для пользователей?</a></li>
+<li><a href="#_потенциальные_пользователи">1.2. Потенциальные пользователи</a></li>
+<li><a href="#_аналогичные_приложения">1.3. Аналогичные приложения</a></li>
+<li><a href="#_конкурентное_преимущество">1.4. Конкурентное преимущество</a></li>
+</ul>
+</li>
+<li><a href="#_business_analysis">2. Business Analysis</a>
+<ul class="sectlevel2">
+<li><a href="#_user_stories">2.1. User Stories</a></li>
+<li><a href="#_domain_models">2.2. Domain models</a></li>
+<li><a href="#_backlog">2.3. Backlog</a></li>
+</ul>
+</li>
+<li><a href="#_architecture">3. Architecture</a>
+<ul class="sectlevel2">
+<li><a href="#_current">3.1. Current</a></li>
+<li><a href="#_future">3.2. Future</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_business_analysis">1. Business Analysis</h2>
+<h2 id="_description">1. Description</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>В рамках данного проекта разрабатывается система, которая призвана помочь специалистам повысить свой уровень подготовки к устному интервью или провести само интервью в какой-либо области, теме или вопросе. Стоит учитывать что такая возможность предоставляется по мере наполнения системы контентом (т.е. областями, темами и вопросами). За наполнение системы контентом отвечают сами пользователи системы.</p>
+</div>
+<div class="sect2">
+<h3 id="_какую_проблему_данный_проект_решает_или_что_нового_приносит_для_пользователей">1.1. Какую проблему данный проект решает или что нового приносит для пользователей?</h3>
 <div class="ulist">
 <ul>
 <li>
+<p>Помогает подготовиться к устному интервью как интервьюируемый</p>
+</li>
+<li>
+<p>Помогает провести устное интервью как интервьюер</p>
+</li>
+<li>
+<p>Позволяет влиять/управлять вопросами, темами и областями, что дает возможность работать с наиболее актуальными вопросами и темами в какой-то области</p>
+</li>
+<li>
+<p>Позволяет формировать статистику по вопросам, за счет обратной связи после интервью, что дает возможность работать с наиболее актуальными вопросами и темами в какой-то области</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_потенциальные_пользователи">1.2. Потенциальные пользователи</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Начинающие специалисты, которые желают подготовиться к интервью</p>
+</li>
+<li>
+<p>Специалисты, которые проводят интервью</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_аналогичные_приложения">1.3. Аналогичные приложения</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Различные web-resource со статическим размещением вопросов и ответов</p>
+</li>
+<li>
+<p>YouTube channel, на которых специалисты проводят online-интервью</p>
+</li>
+<li>
+<p>Различные группы в messengers посвященные вопросам к интервью</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_конкурентное_преимущество">1.4. Конкурентное преимущество</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Управление темами и вопросами, а не статическое размещение вопросов</p>
+</li>
+<li>
+<p>Доступность системы по нескольким каналам (web, mobile)</p>
+</li>
+<li>
+<p>Возможность дать обратную связь после интервью о том, какие вопросы были заданы</p>
+</li>
+<li>
+<p>Статистика по вопросам, частота просмотра и обращения за ответом</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_business_analysis">2. Business Analysis</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_user_stories">2.1. User Stories</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://miro.com/app/board/uXjVOY8hA_k=/?invite_link_id=177006962450" target="_blank" rel="noopener">Mind Map</a></p>
+</li>
+<li>
 <p><a href="https://docs.google.com/spreadsheets/d/1-beYaNfYSqEPwVTp5iYpxdyIm9McmTMMEJoW0VpfUU8/edit?usp=sharing">User Stories</a></p>
 </li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_domain_models">2.2. Domain models</h3>
+<div class="paragraph">
+<div class="title">Domain models</div>
+<p><span class="image"><img src="./assets/img/domain-models.png" alt="Domain models"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_backlog">2.3. Backlog</h3>
+<div class="ulist">
+<ul>
 <li>
 <p><a href="https://github.com/orgs/rakovets-lab/projects/11/views/1">Backlog</a></p>
 </li>
@@ -464,18 +576,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+</div>
 <div class="sect1">
-<h2 id="_architecture">2. Architecture</h2>
+<h2 id="_architecture">3. Architecture</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_current">2.1. Current</h3>
+<h3 id="_current">3.1. Current</h3>
 <div class="paragraph">
 <div class="title">Current Architecture</div>
 <p><span class="image"><img src="./assets/img/architecture-current.png" alt="Current Architecture"></span></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_future">2.2. Future</h3>
+<h3 id="_future">3.2. Future</h3>
 <div class="paragraph">
 <div class="title">Future Architecture</div>
 <p><span class="image"><img src="./assets/img/architecture-future.png" alt="Future Architecture"></span></p>
@@ -483,19 +596,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_domain_models">3. Domain models</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<div class="title">Domain models</div>
-<p><span class="image"><img src="./assets/img/domain-models.png" alt="Domain models"></span></p>
-</div>
-</div>
-</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-08-10 03:12:49 UTC
+Last updated 2022-08-10 03:19:39 UTC
 </div>
 </div>
 </body>
