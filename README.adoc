@@ -1,1 +1,16 @@
 = interview-helper
+
+== Project structure
+
+[options="header"]
+|===
+|Directory|Description
+|`.github`|*GitHub's artifacts*: workflow and contributing docs
+|`api`|*Service* with REST API
+|`bot-telegram`|*Mobile client* as Telegram bot
+|`content-parser`|*CLI app* for parse external resources
+|`data-migration`|*CLI app* for import data to DB
+|`docs`|*Documentation* for projects
+|`web`|*Web client* as server-side rendering
+|`web-service`|*Monolith* for web-service *Interview Helper*
+|===
