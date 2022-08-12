@@ -4,7 +4,7 @@
 
     <parent>
         <groupId>by.rakovets.interview</groupId>
-        <artifactId>interview</artifactId>
+        <artifactId>interview-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
