@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="1661330425" author="lukjanvich@gmail.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <sqlCheck expectedResult="1">
+                    SELECT COUNT(*) FROM interview_helper.public.users WHERE user_id = 'c8bd74bf-c963-43e3-b103-56c98817d33a'
+                </sqlCheck>
+            </not>
+        </preConditions>
+
+        <insert tableName="users">
+            <column name="user_id" value="c8bd74bf-c963-43e3-b103-56c98817d33a"/>
+            <column name="username" value="admin"/>
+            <column name="password" value="12345"/>
+            <column name="role" value="ADMIN"/>
+            <column name="email" value="admin@rakovets.by"/>
+            <column name="first_name" value="Dmitry"/>
+            <column name="last_name" value="Rakovets"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
